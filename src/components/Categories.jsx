@@ -2,7 +2,7 @@ import React from 'react';
 import '../asset/styles/Components/Categories.scss';
 
 const Categories = ({ children, title }) => (
-  <div ClassName='categories'>
+  <div className='categories'>
     <h3 className='categories__title'>{title}</h3>
     {children}
   </div>
