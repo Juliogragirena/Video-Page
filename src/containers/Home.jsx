@@ -17,6 +17,7 @@ const Home = ({ myList, trends, originals }) => {
         <Categories title='Mi Lista'>
           <Carousel>
             {myList.map((item) => (
+              // eslint-disable-next-line react/jsx-props-no-spreading
               <CarouselItem key={item.id} {...item} isList />
             ))}
 
@@ -27,6 +28,7 @@ const Home = ({ myList, trends, originals }) => {
       <Categories title='Tendencias'>
         <Carousel>
           {trends.map((item) => (
+            // eslint-disable-next-line react/jsx-props-no-spreading
             <CarouselItem key={item.id} {...item} />
           ))}
         </Carousel>
@@ -35,6 +37,7 @@ const Home = ({ myList, trends, originals }) => {
       <Categories title='Orginales'>
         <Carousel>
           {originals.map((item) => (
+            // eslint-disable-next-line react/jsx-props-no-spreading
             <CarouselItem key={item.id} {...item} />
           ))}
         </Carousel>
